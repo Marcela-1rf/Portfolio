@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#sobre">About</a></li>
+                <li><a href="#habilidades">Skills</a></li>
+                <li><a href="#projetos">Projects</a></li>
+                <li><a href="#contato">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to my Portfolio!</h1>
+            <p>Web Developer | Solution Creator | Passionate about Technology</p>
+            <a href="#projetos" class="cta-button">See my Projects</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Sobre -->
+        <section id="sobre" class="section">
+            <h2>About Me</h2>
+            <div class="sobre-content">
+                <img src="meu-perfil.jpeg" alt="Profile photo" class="profile-pic">
+                <p>Hello! I'm Marcela, a developer dedicated to creating functional and visually attractive web applications. I'm always looking for new challenges to learn and grow in the technology area.</p>
+            </div>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section id="habilidades" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Creation of modern and responsive layouts.</p>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <p>Development of interactivity and dynamic functionalities.</p>
+                </div>
+                <div class="skill">
+                    <h3>Frameworks</h3>
+                    <p>Experience with React, Vue.js and Bootstrap.</p>
+                </div>
+                <div class="skill">
+                    <h3>Database</h3>
+                    <p>Data management using MySQL and MongoDB.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projetos" class="section">
+            <h2>Projects</h2>
+            <div class="projetos-container">
+                <div class="projeto">
+                    <img src="icon-task.png" alt="Projeto 1">
+                    <h3>Task Management</h3>
+                    <p>Task management platform with full functionalities. <a href="taskmanager.html">See more</a>.</p>
+                </div>
+                <div class="projeto">
+                    <img src="tictactoe.png" alt="Tic Tac Toe">
+                    <h3>Tic Tac Toe Project</h3>
+                    <p>Have fun! <a href="tictactoe.html">See more</a>.</p>
+                </div>
+                <div class="projeto">
+                    <img src="calculator.png" alt="Fun Calculator">
+                    <h3>Calculator</h3>
+                    <p>Calculator with responsive and optimized design. <a href="fun-calculator.html">See more</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="section">
+            <h2>Contact</h2>
+            <p>Contact me for opportunities or collaborations!</p>
+            <form class="contato-form">
+                <input type="text" name="nome" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="mensagem" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/marcela-ferreira-7b944132b/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/Marcela-1rf" target="_blank">GitHub</a></li>
+                <li><a href="marcela.1rf@gmail.com">Email</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Marcela Ferreira. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

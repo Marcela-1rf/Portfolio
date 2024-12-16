@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tarefas</title>
+    <link rel="stylesheet" href="styletask.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Task Manager</h1>
+        <p>Organize your activities efficiently.</p>
+    </header>
+
+    <main>
+        <section id="task-section">
+            <h2>My Tasks</h2>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Add a new task." required>
+                <button type="submit">Add</button>
+            </form>
+            <ul id="task-list">
+                <!-- Tarefas serão adicionadas dinamicamente aqui -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Marcela Ferreira. Task Management Project.</p>
+    </footer>
+
+    <script>
+        const taskForm = document.getElementById('task-form');
+        const taskInput = document.getElementById('task-input');
+        const taskList = document.getElementById('task-list');
+
+        taskForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const taskText = taskInput.value.trim();
+            if (taskText !== '') {
+                const li = document.createElement('li');
+                li.textContent = taskText;
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Excluir';
+                deleteButton.className = 'delete-btn';
+                deleteButton.addEventListener('click', () => li.remove());
+                li.appendChild(deleteButton);
+                taskList.appendChild(li);
+                taskInput.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
